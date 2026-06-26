@@ -2,8 +2,11 @@
 cargo_generate_version = ">=0.21.0"
 ignore = ["hooks", "docs", "README.md"]
 
-[hooks]
-post = ["hooks/post-script.rhai"]
+[conditional.'!include_db']
+ignore = ["src/db.rs", "src/store.rs", "migrations"]
+
+[conditional.'!include_dashboard']
+ignore = ["{{dashboard_dir}}"]
 
 [placeholders.project_description]
 type = "string"
