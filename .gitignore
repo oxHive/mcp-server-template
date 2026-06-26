@@ -1,0 +1,6 @@
+/target
+{% if include_dashboard %}
+/{{dashboard_dir}}/node_modules
+/{{dashboard_dir}}/dist/*
+!/{{dashboard_dir}}/dist/.gitkeep
+{% endif %}
