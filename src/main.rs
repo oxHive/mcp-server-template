@@ -1,8 +1,6 @@
 use anyhow::Result;
 use clap::Parser;
-use {{crate_name}}::{cli::{Cli, Command, McpAction}, config, http, server::{{project-name | pascal_case}}};
-use rmcp::ServiceExt;
-
+use {{crate_name}}::{cli::{Cli, Command, McpAction}, config, http};
 fn main() -> Result<()> {
     let cli = Cli::parse();
     match cli.command {
