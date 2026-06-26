@@ -1,0 +1,25 @@
+[template]
+cargo_generate_version = ">=0.21.0"
+ignore = ["hooks", "docs", "README.md"]
+
+[hooks]
+post = ["hooks/post-script.rhai"]
+
+[placeholders.project_description]
+type = "string"
+prompt = "Short description of your project"
+
+[placeholders.include_db]
+type = "bool"
+prompt = "Include SQLite storage layer (libsql)?"
+default = false
+
+[placeholders.include_dashboard]
+type = "bool"
+prompt = "Include Vue dashboard?"
+default = false
+
+[placeholders.dashboard_dir]
+type = "string"
+prompt = "Dashboard directory name? (dashboard / web / ui)"
+default = "dashboard"
