@@ -1,6 +1,6 @@
 [template]
 cargo_generate_version = ">=0.21.0"
-ignore = ["hooks", "docs", "README.md"]
+ignore = ["docs", "README.md"]
 
 [conditional.'!include_db']
 ignore = ["src/db.rs", "src/store.rs", "migrations"]
