@@ -7,7 +7,7 @@ post = ["hooks/post-script.rhai"]
 
 [placeholders.project_description]
 type = "string"
-prompt = "Short description of your project"
+prompt = "Short description of what your MCP server does"
 
 [placeholders.include_db]
 type = "bool"
@@ -16,7 +16,7 @@ default = false
 
 [placeholders.include_dashboard]
 type = "bool"
-prompt = "Include Vue dashboard?"
+prompt = "Include Vue dashboard? (optional web UI, scaffolded via bun create vue)"
 default = false
 
 [placeholders.dashboard_dir]
